@@ -1,5 +1,5 @@
 import "../gallery.css";
-import "../../app.css"
+// import "../../app.css"
 
 const PhotoGallery = ({data}) => {
     return (

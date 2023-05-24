@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../app.css";
+// import "../app.css";
 import "./contacts.css";
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email'
