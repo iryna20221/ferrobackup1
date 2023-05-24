@@ -1146,7 +1146,8 @@ const dataEn = {
             photoTitle: "Photo gallery", 
             videoTitle: "Video gallery", 
             photoPath: 'participation_in_the_exhibition_Poland2.jpg', 
-            videoPath: "automated_machine_for_straight_milling.mp4", 
+            videoPath: "overpass_and_uncoupler.mp4",
+        //     "automated_machine_for_straight_milling.mp4", 
             photoAltText: "Photo is not supported by your browser", 
             videoAltText: "Video is not supported by your browser"},
     photoGallery:
@@ -1198,7 +1199,9 @@ const dataEn = {
                 videoNotSupportMessage: "Your browser does not support the video",
                 videos: 
                         [
-                                
+                        // {id: 0, 
+                        // videoRecord: 'pallet_board_stacker.mp4', 
+                        // captionText: 'Pallet board stacker'},
                         // {id: 1, 
                         // videoRecord: 'automated_machine_for_straight_milling.mp4', 
                         // captionText: 'Automated machine for straight milling SCMM125'},
@@ -1231,7 +1234,8 @@ const dataEn = {
                         captionText: 'Krafter line modernization'},
                         {id: 11, 
                         videoRecord: 'log_conveyer.mp4',
-                        captionText: 'Log conveyer'},
+                        captionText: 'Log conveyer'}
+                        // ,
                         // {id: 12, 
                         // videoRecord: 'pallet_board_stacker_element.mp4',
                         // captionText: 'Pallet board stacker element'},
