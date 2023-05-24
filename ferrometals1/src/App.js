@@ -18,7 +18,7 @@ import Footer from './header-and-footer/Footer';
 import PrivacyPolicy from './header-and-footer/Privacypolicy';
 import Address from './header-and-footer/Address';
 import dataEn from "./data/dataEn";
-import "./app.css"
+import "./App.css"
 
 function App() {
   const [data, setData] = useState(dataEn);
