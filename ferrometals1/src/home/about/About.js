@@ -1,5 +1,4 @@
 import AboutGearIcon from "./AboutGearIcon";
-import AboutPhotoSlider from "./AboutPhotoSlider"
 import "../home.css"
 
 const About = ({data}) => {

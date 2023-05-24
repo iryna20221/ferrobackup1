@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
-import "../app.css";
+// import "../app.css";
 
 const Footer = ({data, handleToggle, navigateToTheTop, linkScroll}) => {
     const fullPhoneNumber = "tel:" + data.header.phoneNumber;
