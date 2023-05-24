@@ -1,38 +1,341 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* :root {
+    --main-dark-color: #272727;
+    --details-color: rgb(60, 204, 122);
+    --third-details-color: rgb(175,180,183);
+    --menu-color: rgb(207, 223, 222);
+    --logo-color: rgb(207, 223, 222);
+    --main-background-color: #EFF1F3;
+    --second-details-color: rgb(32, 133, 76);
+    --menu-hover-color: rgba(96, 182, 228, 0.852);
+    --main-font: 'Open Sans', sans-serif;
+    --main-font-size: 90%;
+  } 
+   */
+
+ :root {
+    --main-dark-color: #272727;
+    --details-color: rgba(20,172,147,255);
+    --menu-color: rgb(207, 223, 222);
+    --main-background-color: #EFF1F3;
+    --second-details-color: rgba(13,94,114,255);
+    --third-details-color: #9b9c9d;
+    --menu-hover-color: rgba(96, 182, 228, 0.852);
+    --main-font: 'Open Sans', sans-serif;
+    --main-font-size: 90%;
+  } 
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-background-color);
+    /* background-color: var(--main-background-color); */
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+    background-image: url(./img/background.jpg);
+    /* background-image: url(./img/close-up.jpg); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-blend-mode: multiply, darken; */
+     overflow-x: hidden;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Header styles///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.App-header{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    max-height: 20vh;
+    background: none;
+    padding: 0 10em;
+    font-size: 130%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 1px 1.5px 0 #444;
+    z-index: 100;
+} 
+
+.Header-logo-container {
+    display: flex;
+    justify-content: flex-start;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Header-logo {
+    max-height: 7em;
 }
 
-.App-link {
-  color: #61dafb;
+.Header-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Header-contacts-container {
+    display: flex;
+    flex-direction: row;
+    margin: 1em 0.5em;
+    justify-content: space-between;
+    max-height: max-content;
+    align-items: center;
 }
+
+.Header-icon {
+    text-shadow: 1px 1.5px 0 #444;
+}
+
+.Header-language-buttons-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Header-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Dropdown-links-container {
+    display: flex;
+    align-items: center;
+}
+
+.Dropdown-link {
+    margin-right: 3vh;
+    color: var(--main-dark-color);
+    text-shadow: none;
+    text-decoration: none;
+}
+
+.Dropdown-link:hover {
+    color: var(--details-color);
+    text-decoration: underline;
+}
+
+.Nav-menu-item {
+    color: var(--menu-color);
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.Nav-menu-item:hover {
+    color: var(--details-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Dropdown-Links-Inner-Container {
+    min-width: max-content;
+}
+
+
+/*Callback styles///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+ 
+.Callback-button {
+    border: none;
+    background-color: inherit;
+    font-family: var(--main-font);
+    text-shadow: 1px 1.5px 0 #444;
+}
+  
+.Callback-button, .Header-contacts, .Footer-text {
+    color: var(--details-color);
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.Callback-button-container :hover {
+    color: var(--main-background-color);
+    cursor: pointer;
+}
+
+.Header-contacts :hover {
+    color: var(--menu-color);
+}
+
+/* .ProductList-button {
+    background-color: inherit;
+    border: none;
+    color: var(--menu-color);
+}
+
+.ProductList-container {
+    width: min-content;;
+    display: flex;
+    flex-direction: row;
+
+} */
+
+.Callback-container {
+    background-color: var(--second-details-color);
+    padding: 2%;
+    text-align: center;
+    width: 40%;
+
+}
+
+.Callback-inner-button, .Callback-submit-button {
+    padding: 1%;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Callback-inner-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Callback-textfield {
+   display: block;
+   font-size: 120%;
+   padding: 5%;
+   margin: 2% 0;
+}
+
+.Callback-textfield-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+}
+
+.Callback-text {
+    font-size: 120%;
+}
+
+.Callback-submit-button {
+    margin: 0 40%;
+}
+
+ /* Top Scroll styles ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.Top-Scroll-Container {
+    position: absolute;
+    top: 500%;
+    right: 2.5%;
+    background-color: var(--second-details-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    cursor: pointer;
+    /* opacity: 0.7; */
+}
+
+/* End of Top Scroll styles /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/*Footer styles/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.App-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--main-dark-color);
+    margin: 0;
+    padding: 2vh 7vh;
+    width: inherit;
+} 
+
+.Footer-Nameplate {
+    width: 20%;
+}
+
+.Footer-Info-Container , .Footer-Links-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1vh;
+    max-width: 15%;
+}
+
+.Footer-Links-Container {
+    gap: 3vh
+}
+
+.Footer-Info, .Footer-Callback, .Footer-Copyright,  .Footer-Link {
+    font-size: 110%;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.Footer-Link {
+    color: var(--details-color); 
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.Footer-Link:hover{
+    color: var(--main-background-color); 
+    text-decoration: underline;
+}
+
+.Footer-Callback:hover {
+    color: var(--main-background-color);
+}
+
+.Footer-Info:hover {
+    color: var(--details-color); 
+    text-decoration: underline;
+}
+
+.Footer-Info , .Footer-Copyright {
+    color: var(--main-background-color);
+}
+
+.Footer-Callback {
+    color: var(--details-color);
+    font-weight: 600;
+}
+
+.Privacy-policy-container {
+    white-space: pre-wrap;
+    text-align: justify;
+    margin: 0 10%;
+    font-size: 110%;
+    font-weight: 400;
+}
+
+.Address-text {
+    white-space: pre-wrap;
+    text-align: justify;
+}
+
+/* @media(max-width: 420px) {
+    .Header-upper-container {
+        flex-direction: column;
+    }
+} */
+
+/* Scroll handle header styles///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+#headerBackgroundChange {
+    background-color: var(--main-dark-color)
+}
+
+/* End of scroll handle header styles///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* Standart styles///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.Standart-Section {
+    padding-top: 25vh;
+    padding-bottom: 15vh;
+    background-color: var(--main-background-color);
+}
+
+/* .Component-Border {
+    border-radius: 14%;
+} */

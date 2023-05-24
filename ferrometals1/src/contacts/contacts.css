@@ -1,0 +1,93 @@
+
+.Contacts-container {
+    text-align: center;
+    /* padding: 5%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.Contacts-container-heading {
+    text-align: center;
+    font-size: 150%;
+    font-weight: 600;
+    margin-top: 0;
+   
+    /* font-style: italic; */
+}
+
+.Contacts-inner-container-heading {
+    text-align: center;
+    font-size: 110%;
+    font-weight: 500; 
+}
+
+.Contacts-adress-container {
+    max-width: 47%;
+    text-align: left;
+    /* font-style: italic */
+}
+
+.Contacts-inner-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    justify-content: space-between;
+    font-size: 110%;
+    padding: 0 2vh;
+    gap: 5vh;
+}
+
+.Contacts-inner-content-container, .Contacts-inner-container-text {
+    width: 40vh;
+    line-height: 1.5;
+    
+}
+
+.Contacts-inner-content-container, .Contacts-inner-container-text {
+    font-size: 110%;
+}
+
+.Contacts-feedback-form-container {
+    background-color: var(--details-color);
+    min-width: 47%;
+    font-size: 120%;
+    font-weight: 500;
+    padding-bottom: 3%;
+}
+
+.Contacts-feedback-form-input, .Contacts-feedback-form-text-input {
+    margin-bottom: 3%;
+    font-size: large;
+    padding: 3%;
+}
+
+.Contacts-feedback-form-input {
+   max-width: 42%;
+}
+
+.Contacts-feedback-form-text-input {
+    align-items: stretch;
+    height: 100px;
+}
+
+.Contacts-feedback-form-input-container {
+    margin: 0  7%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+     
+}
+
+.Contacts-feedback-form-input-container-without-text-form-input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Contacts-feedback-form-button {
+    font-family: var(--main-font);
+    padding: 2%;
+}
