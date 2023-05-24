@@ -2,7 +2,7 @@ import Nav from '../nav/Nav';
 import Callback from './Callback';
 import TopScroll from './TopScroll';
 import Button from '@mui/material/Button';
-import "../../src/app.css";
+import "../app.css";
 import dataRu from "../data/dataRu";
 import dataEn from "../data/dataEn";
 import dataLt from "../data/dataLt";
